@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../components/Header';
+import './Logement.css'
 
 const Logement = () => {
     return (
         <div>
-            <h2>logelement</h2>
+            
         </div>
     );
 };

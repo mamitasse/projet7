@@ -1,11 +1,12 @@
 import React from 'react';
-import Imagebanner from '/Users/idiri/Desktop/Projet7/kasa/src/utils/style/'
-import '../utils/style/src/utils/style/banniereaccueil.css'
+import Imagebanner from '../assets/imagebanner.png'
+import '../utils/style/banniereaccueil.css'
 
 const BaniereAccueil = () => {
     return (
         <div className='Bannieraccueil'>
-          <img className='logo' src={Imagebanner} alt="logo kasa"/>
+          <img className='banner_img' src={Imagebanner} alt="image paysage"/>
+          <p className='textbanner'>Chez vous, partout et ailleurs</p>
         </div>
     );
 };
