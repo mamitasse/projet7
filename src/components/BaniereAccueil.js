@@ -1,5 +1,5 @@
 import React from 'react';
-import Imagebanner from '../assets/imagebanner.png'
+import Imagebanner from '../assets/bannerHome.png'
 import '../utils/style/banniereaccueil.css'
 
 const BaniereAccueil = () => {

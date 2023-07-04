@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home.js'
-import Header from './components/Header.js'
-import Footer from './components/Footer.js'
-import Error from './components/Error.js'
-import About from './pages/About.js'
-import Logement from './pages/Logement.js'
+import Home from './pages/Home/Home'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import Error from './components/Error/Error'
+import About from './pages/About/About'
+import Logement from './pages/Logement/Logement'
 import  './utils/style/globalStyle.css'
 
 

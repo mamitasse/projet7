@@ -1,12 +1,19 @@
-import React from 'react';
-import Header from '../components/Header';
+import React from 'react'
+import BannerAbout from'../../assets/BannerAbout.png'
+
+import './About.css'
+ 
+
 
 const About = () => {
     return (
-        <div>
-            <h1>a propos</h1>
-        </div>
-    );
+        <main className='main_about'>
+        <article className='banner'>
+            <img className='banner_img' src={BannerAbout} alt="paysage montagne" />
+        </article >
+    </main>
+  )
+
 };
 
 export default About;
