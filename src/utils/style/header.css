@@ -1,0 +1,38 @@
+.header_container {
+        display: flex;
+        flex-direction: row;
+
+      justify-content: space-between;
+        align-items: baseline;
+        margin-left: 40px;
+  width: 90%;
+  height: 68px;
+  margin-top: 30px;
+   
+  color: #FF6060;
+  text-decoration: none;
+  
+}
+.logo {
+
+}
+
+.navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-end;
+        align-items:flex-end;
+        width:100%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        text-decoration: none;
+        gap: 30px;
+        margin-right: 40px;
+         
+        color: #FF6060;
+        text-decoration: none;
+        }  
+    
+  
+    

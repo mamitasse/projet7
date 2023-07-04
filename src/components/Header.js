@@ -1,7 +1,9 @@
-import { Link } from 'react-router-dom'
+
 import React from 'react'
-import logorouge from ''
+import logorouge from '../assets/logorouge.png'
 import '../utils/style/header.css'
+
+import { Link } from 'react-router-dom'
 
 
 
@@ -9,17 +11,18 @@ function Header() {
   
 return (
   <header className='header_container'>
-    <Link to="/">
+    <figure>
       <img className='logo' src={logorouge} alt="logo kasa"/>
-    </Link>
-    <nav className='navbar'>
-      <div className="navli">
+   </figure>
+   <nav className='navbar'>
+      
             <Link className="nav" to="/">Accueil</Link>
-          </div>
-      <div className="navli">
+         
+     
             <Link className="nav" to="/about">À propos</Link>
-          </div>    
+        
     </nav>
+    
   </header>
 )
 }
