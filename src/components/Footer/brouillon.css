@@ -1,40 +1,34 @@
-footer {
+.footer {
     background-color: #000000;
     height: 150px;
     width: 100%;
 }
 
-#footer-container {
+.footer{
+   
+   width: 100%;
     height: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 }
 
-#footer-container > img {
+.footer > img {
     height: 25px;
     margin: auto;
     padding-top: 20px;
 }
 
-#footer-container > p {
+.footer > p {
     color: #ffffff;
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 992px) {
-    #footer-container > p {
+    .footer > p {
         margin-bottom: 35px ;
-        font-size: 12px;
+        font-size: small;
     }
-    #footer-container > img {
+    .footer > img {
         height: 30px;
         padding-top: 25px;
         }
 }
-
-
-
