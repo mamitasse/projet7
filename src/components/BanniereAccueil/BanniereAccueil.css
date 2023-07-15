@@ -59,6 +59,9 @@
     margin: 15px 15px;
     width: 83%;
     padding : 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .banner_title{
     font-size: 24px;
@@ -70,3 +73,4 @@
     }
 
  }
+ 

@@ -11,7 +11,7 @@ const LocationList=()=> {
        
             <div className="block-logements">
                 {LogementData.map((logement) => 
-                    <NavLink key={logement.id} to={"/logement/"+logement.id}>
+                    <NavLink key={logement.id} to={"/Logement/"+logement.id}>
                         <Cards key={logement.id} id={logement.id} image={logement.cover} titre={logement.title} />
                     </NavLink>)}
             </div>
