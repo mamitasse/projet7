@@ -1,62 +1,109 @@
 .Fiche-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
   width: 90%;
-  margin: 20px 20px;
-  padding: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  color: #ff6060;
-}
-
-.Fiche-logement {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin-top: 30px;
+  gap: 30px;
+  margin-bottom: 20px;
+  margin: 30px 30px;
+  color: #ff6060;
+  margin-right: 20px;
 }
-.description-info__proprietaire {
-  display: flex;
-  align-items: self-end;
-  font-size: 18px;
+.section_carrousel {
+  color: white;
   font-weight: 500;
+  width: 100%;
 }
-.description-info {
+.titreEtProprietaire {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+  gap: 10%;
+  margin-top: 25px;
   width: 100%;
+
+  @media screen and (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.description-centent__description {
+  @media screen and (max-width: 992px) {
+    width: 100%;
+  }
+}
+.description-centent__equipement {
+  @media screen and (max-width: 992px) {
+    width: 100%;
+  }
 }
 
-.description-info__titletags {
+.titreEtProprietaire__propietaire {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 0%;
+  width: 50%;
+  @media screen and (max-width: 992px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 100%;
+    
+  
+  }
+}
+
+.titreEtProprietaire__info__title {
+  width: 50%;
+  @media screen and (max-width: 992px) {
+    width: 100%;
+  }
+}
+.rate-container {
+  @media screen and (max-width: 992px) {
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+  }
+}
+
+.titreEtProprietaire__info__title .titre-logement {
   display: flex;
   flex-direction: column;
-}
-
-.description-info__titletags__title {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
-}
-
-.description-info__titletags__title .titre-logement {
-  font-size: 14px;
+  color: #ff6060;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
   font-weight: 500;
+  line-height: 142.6%;
+  @media screen and (max-width: 992px) {
+    width: 100%;
+  }
 }
 
-.description-info__titletags__title .endroit-logement {
-  font-size: 14px;
+.titreEtProprietaire__info__title.endroit-logement {
+  color: #ff6060;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
   font-weight: 500;
+  line-height: 142.6%;
 }
 
-.description-info__titletags__tags {
+.titreEtProprietaire__info__tags {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
   width: 100%;
 }
-
 
 .description-centent {
   align-items: baseline;
@@ -68,52 +115,119 @@
   font-size: 18px;
 }
 
-@media screen and (min-width: 769px) {
-  .description-info {
+.rate-container {
+  @media screen and (max-width: 992px) {
+    width: 50%;
+  }
+}
+
+.description-centent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 100%;
+    align-items: baseline;
+ 
+  }
+}
+.description-centent__description {
+  width: 50%;
+  @media screen and (max-width: 992px) {
+    width: 100%;
+  }
+}
+.description-centent__equipement {
+  width: 50%;
+  @media screen and (max-width: 992px) {
+    width: 100%;
+  }
+}
+
+.description-info__proprietaire__nom-prop .photo-proprietaire {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  @media screen and (max-width: 992px) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.description-info__proprietaire__nom-prop .nom-prop {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 10px;
+  text-align: right;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.description-info__proprietaire__rate {
+  justify-content: flex-end;
+  margin-top: 20px;
+  @media screen and (max-width: 769px) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
   }
+}
 
-  .description-info__titletags {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-  }
+.description-info__proprietaire__rate .etoile {
+  width: 15px;
+  height: 15px;
+}
 
-  .description-info__titletags__title {
-    display: flex;
-    flex-direction: column;
-  }
+.description-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  .description-info__titletags__title .titre-logement {
-    font-size: 36px;
-    font-weight: 500;
-    display: flex;
-    align-items: flex-end;
-  }
+.description-info__titletags {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
 
-  .description-info__titletags__title .endroit-logement {
-    font-size: 18px;
-    font-weight: 500;
-    display: flex;
-    align-items: flex-end;
-  }
+.description-info__titletags__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-info__titletags__title .titre-logement {
+  font-size: 36px;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-end;
+}
+
+.description-info__titletags__title .endroit-logement {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-end;
 }
 
 .description-info__proprietaire {
+
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  flex-direction: row-reverse;
-}
-
-@media screen and (min-width: 769px) {
-  .description-info__proprietaire {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 .description-info__proprietaire__nom-prop {
@@ -142,43 +256,18 @@
 }
 
 .description-info__proprietaire__rate .etoile {
-  width: 15px;
-  height: 15px;
-}
-.description-centent {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-@media screen and (min-width: 769px) {
-  .description-info__proprietaire__rate .etoile {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
+  @media screen and (max-width: 992px) {
+    width: 20px;
+    height: 20px;
   }
 }
 
-.description-centent {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-@media screen and (min-width: 769px) {
-  .description-centent {
+.rate-contenair {
+  @media screen and (max-width: 769px) {
     display: flex;
+    align-items: baseline;
     flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .description-centent__description {
-    width: 50%;
-    padding-right: 40px;
-  }
-
-  .description-centent__equipement {
-    width: 50%;
-    padding-left: 40px;
   }
 }
