@@ -56,7 +56,7 @@ justify-content: center;
 
 .slip_carrousel {
     position: absolute;
-    color: var(--secondary-color);
+   
     bottom: 25px;
     left: 50%;
     font-size: 18px;

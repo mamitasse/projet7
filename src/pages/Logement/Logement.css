@@ -1,12 +1,13 @@
 .Fiche-container {
-  width: 90%;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin-bottom: 20px;
-  margin: 30px 30px;
+  margin-left: 30px;
   color: #ff6060;
-  margin-right: 20px;
+  margin-right: 30px;
+  margin-top: 30px;
 }
 .section_carrousel {
   color: white;
@@ -56,8 +57,6 @@
     justify-content: space-between;
     flex-direction: row-reverse;
     width: 100%;
-    
-  
   }
 }
 
@@ -136,7 +135,6 @@
     justify-content: space-around;
     width: 100%;
     align-items: baseline;
- 
   }
 }
 .description-centent__description {
@@ -222,12 +220,10 @@
 }
 
 .description-info__proprietaire {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .description-info__proprietaire__nom-prop {
