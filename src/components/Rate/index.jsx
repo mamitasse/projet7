@@ -1,11 +1,11 @@
-import React from 'react';
-import FullStar from '../../assets/Full_star.png';
-import EmptyStar from '../../assets/Empty_star.png';
+import React from "react";
+import FullStar from "../../assets/Full_star.png";
+import EmptyStar from "../../assets/Empty_star.png";
 
 function Rate(props) {
   const score = props.score;
   const notes = [1, 2, 3, 4, 5];
-  
+
   return (
     <div className="rate-contenair">
       {notes.map((note) =>

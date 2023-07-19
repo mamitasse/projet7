@@ -3,7 +3,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import LogementData from "../../Data/logements.json";
 import ErrorPage from "../ErrorPage";
-import Carrousel from "../../components/carrousel";
+import Carrousel from "../../components/Carrousel";
 import "./Logement.css";
 import Rating from "../../components/Rate";
 import Host from "../../components/Host";
@@ -44,17 +44,17 @@ const Logement = () => {
           <div className="titreEtProprietaire__info__tags">{tagsLogement}</div>
         </div>
         <div className="titreEtProprietaire__propietaire">
-        {/* Hosting */}
-        <div className="description-info__proprietaire__nom-prop">
-          <Host name={logement?.host.name} picture={logement?.host.picture} />
-        </div>
-        {/* Rating */}
-        <div className="description-info__proprietaire__rate">
-          <Rating score={logement.rating} />
+          {/* Hosting */}
+          <div className="description-info__proprietaire__nom-prop">
+            <Host name={logement?.host.name} picture={logement?.host.picture} />
+          </div>
+          {/* Rating */}
+          <div className="description-info__proprietaire__rate">
+            <Rating score={logement.rating} />
+          </div>
         </div>
       </div>
-      </div>
-      
+
       <div className="description-centent">
         <div className="description-centent__description">
           <Collapse title="Description" content={logement?.description} />

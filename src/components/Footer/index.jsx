@@ -1,8 +1,8 @@
 import React from "react";
 import "./Footer.css";
 import logoFooter from "../../assets/logoblanc.png";
-const Footer=()=> {
-  return(
+const Footer = () => {
+  return (
     <footer>
       <div id="footer-container">
         <img src={logoFooter} alt="Logo" />
@@ -10,6 +10,6 @@ const Footer=()=> {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
