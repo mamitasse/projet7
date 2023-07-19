@@ -1,4 +1,5 @@
 .Fiche-container {
+
   justify-content: space-between;
   display: flex;
   flex-direction: column;
@@ -9,7 +10,7 @@
   margin-right: 30px;
   margin-top: 30px;
 }
-.section_carrousel {
+.section_Carrousel {
   color: white;
   font-weight: 500;
   width: 100%;

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import PreviousArrow from "../../assets/Precedent.png";
 import NextArrow from "../../assets/Suivant.png";
-import "./carrousel.css";
+import "./Carrousel.css";
+
 function Carrousel({ pictures }) {
   const [current, setCurrent] = useState(0);  // Hook permettant d'avoir des variables d'état dans les composants fonctionnels.
   const length = pictures.length;
@@ -15,11 +16,11 @@ function Carrousel({ pictures }) {
   };  // Fonction pour revenir à la dernière photo
     
   return (
-    <section className="section_carrousel">
+    <section className="section_Carrousel">
       <div className="img_container">
         <img 
           key={pictures.id}
-          className="img_carrousel" 
+          className="img_Carrousel" 
           src={pictures[current]} 
           alt={pictures.title} 
         />
@@ -31,7 +32,7 @@ function Carrousel({ pictures }) {
         src={PreviousArrow} 
         alt="Illustration précédente" 
       />
-      <div className={ length === 1 ? "slip_carrousel_none" : "slip_carrousel" }>
+      <div className={ length === 1 ? "slip_Carrousel_none" : "slip_Carrousel" }>
         <span>
           {current + 1} / {length}
         </span>

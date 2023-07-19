@@ -17,7 +17,7 @@ justify-content: center;
     justify-content: center;
 }
 
-.img_carrousel {
+.img_Carrousel {
     height: 415px;
     width: 100%;
     object-fit: cover;
@@ -54,7 +54,7 @@ justify-content: center;
     display: none;
 }
 
-.slip_carrousel {
+.slip_Carrousel {
     position: absolute;
    
     bottom: 25px;
@@ -63,7 +63,7 @@ justify-content: center;
     font-weight: 500;
 }
 
-.slip_carrousel_none {
+.slip_Carrousel_none {
     display: none;
 }
 
@@ -71,7 +71,7 @@ justify-content: center;
 
 @media (max-width: 768px) {
 
-    .section_carrousel {
+    .section_Carrousel {
         height: 315px;
     }
 
@@ -80,7 +80,7 @@ justify-content: center;
         
     }
 
-    .img_carrousel {
+    .img_Carrousel {
         height: 315px;
     }
 
@@ -96,7 +96,7 @@ justify-content: center;
         top: 145px;
     }
 
-    .slip_carrousel {
+    .slip_Carrousel {
         bottom: 15px;
         font-size: 15px;
     }
@@ -106,7 +106,7 @@ justify-content: center;
 
 @media (max-width: 480px) {
 
-    .section_carrousel {
+    .section_Carrousel {
         height: 255px;
     }
 
@@ -114,7 +114,7 @@ justify-content: center;
         height: 255px;
     }
 
-    .img_carrousel {
+    .img_Carrousel {
         height: 255px;
     }
 
@@ -130,7 +130,7 @@ justify-content: center;
         top: 118px;
     }
 
-    .slip_carrousel {
+    .slip_Carrousel {
         bottom: 10px;
         font-size: 12px;
     }
