@@ -1,20 +1,23 @@
 /********** Desktop ************/
-.main-home {
-  background-color: white;
+.main-home{
+  background-color : white;
   padding: 0 6%;
-  display: flex;
+  display:flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .banner {
-  display: flex;
-  background: rgba(0, 0, 0, 0.8);
+  display:flex;
+  background: rgba(0,0,0,.8);
   border-radius: 25px;
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  height: 223px;
+  margin-top: 10px;
 }
 
 .banner_img {
@@ -23,55 +26,56 @@
   margin: auto;
   border-radius: 25px;
   opacity: 0.6;
-  object-fit: cover;
-  height: 223px;
 }
-.banner_title {
+.banner_title{
   position: absolute;
   z-index: 3;
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: 500;
   line-height: 142.6%;
-  display: flex;
-  color: #ffffff;
+  display:flex;
+  color: #FFFFFF;
 }
 
-/********** Tablette **********/
-@media (max-width: 992px) {
-  .main-home {
-    margin: 20px 20px;
 
-    padding: 20px;
-  }
-  .banner {
-    height: 110px;
-    border-radius: 10px;
-  }
-  .banner_img {
-    border-radius: 10px;
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
-  .banner_title {
-    font-size: 24px;
+/********** Tablette **********/
+@media (max-width: 992px){
+.main-home {
+  margin: 20px 20px;
+  
+  padding: 20px;
+}
+.banner {
+  height:110px;
+  border-radius: 10px;
+}
+.banner_img {
+  height:110px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner_title{
+  font-size: 24px;
   }
 }
 
 /************* Mobile *******************/
 
-@media (max-width: 768px) {
-  .main-home {
-    margin: 15px 15px;
-    width: 83%;
-    padding: 0px 10px;
+@media (max-width: 768px){
+.main-home {
+  margin: 15px 15px;
+  width: 83%;
+  padding : 0px 10px;
+}
+.banner_title{
+  font-size: 24px;
+  line-height:100%;
+  text-align: left;
+  font-weight: 500;
+  left:9%;
+  right:25%;
   }
-  .banner_title {
-    font-size: 24px;
-    line-height: 100%;
-    text-align: left;
-    font-weight: 500;
-    left: 9%;
-    right: 25%;
-  }
+
 }

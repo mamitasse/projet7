@@ -7,9 +7,10 @@
   border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 20px;
-  margin: 30px;
+  width: 90%;
+  margin-top: 20px;
 }
 
 .block-logements a {
@@ -36,6 +37,8 @@
     flex-direction: column;
     align-content: center;
     padding: 0;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .banniere-accueil img {
     height: 95px;

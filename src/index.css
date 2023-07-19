@@ -4,8 +4,13 @@
 body {
   font-family: "Montserrat", Helvetica, sans-serif;
   font-weight: 500;
+  max-width: 1440px;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
-  margin: 0px;
+  min-height: 100vh;
 }
 
 * {
