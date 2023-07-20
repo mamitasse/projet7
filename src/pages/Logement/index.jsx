@@ -3,7 +3,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import LogementData from "../../Data/logements.json";
 import ErrorPage from "../ErrorPage";
-import Carrousel from "../../components/Carrousel";
+import Carrousel from "../../components/carrousel";
 import "./Logement.css";
 import Rating from "../../components/Rate";
 import Host from "../../components/Host";

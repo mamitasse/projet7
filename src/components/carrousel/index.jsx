@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PreviousArrow from "../../assets/Precedent.png";
 import NextArrow from "../../assets/Suivant.png";
-import "./Carrousel.css";
+import "./carrousel.css";
 function Carrousel({ pictures }) {
   const [current, setCurrent] = useState(0); // Hook permettant d'avoir des variables d'état dans les composants fonctionnels.
   const length = pictures.length;
