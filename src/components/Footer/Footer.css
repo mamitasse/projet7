@@ -7,7 +7,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+ 
 }
 
 #footer-container {
@@ -40,7 +40,7 @@ footer {
 
   footer {
     bottom: 0%;
-    position: fixed;
+   
     height: 120px;
   }
 }
